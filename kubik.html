@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #kubik{
+            width: 200px;
+            height: 200px;
+            border-left: 3px solid blue;
+            border-top: 3px solid red;
+            border-right:3px solid green;
+            border-bottom:3px solid black ;
+        }
+    </style>
+</head>
+<body>
+    <div id="kubik"></div>
+    <br>
+    <button id="rotateRight">45 derece saga</button>
+
+    <button id="rotateLeft">45 derece sola</button>
+
+    <script>
+        var div = document.getElementById('kubik')
+
+        rotationDegree = 0;
+
+        rotateRight.onclick = function(){
+            rotationDegree = rotationDegree + 45;
+            div.style.transform ="rotate("+rotationDegree+"deg)"
+        }
+
+        rotateLeft.onclick = function(){
+            rotationDegree = rotationDegree - 45;
+            div.style.transform ="rotate("+rotationDegree+"deg)"
+        }
+
+    </script>
+</body>
+</html>
